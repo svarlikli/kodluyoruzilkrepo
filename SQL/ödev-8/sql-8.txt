@@ -1,0 +1,32 @@
+
+1 - CREATE TABLE employee (
+	id SERIAL,
+ 	name VARCHAR(50) NOT NULL,
+ 	birthday DATE NOT NULL,
+ 	email VARCHAR(100) NOT NULL
+ );
+
+2 - https://www.mockaroo.com/
+insert into employee (name, birthday, email) values ('Arnoldo', '2021-12-23', 'ajoynt0@quantcast.com');
+insert into employee (name, birthday, email) values ('Hayes', '2022-01-23', 'hwyleman1@free.fr');
+insert into employee (name, birthday, email) values ('Bette-ann', '2022-06-16', 'bpressman2@who.int');
+insert into employee (name, birthday, email) values ('Hewett', '2022-01-22', 'hfeathersby3@ucsd.edu');
+insert into employee (name, birthday, email) values ('Burtie', '2021-08-03', 'bscarff4@dell.com');
+insert into employee (name, birthday, email) values ('Gideon', '2022-03-13', 'gflintiff5@samsung.com');
+insert into employee (name, birthday, email) values ('Chrystel', '2022-05-20', 'cwane6@google.fr');
+insert into employee (name, birthday, email) values ('Clarie', '2021-08-29', 'cnortheast7@unesco.org');
+.......
+
+3- UPDATE employee
+ 	SET id ='5',
+ 		name ='Suat',
+ 		birthday = '1989-01-20',
+ 		email = 'suatvarlikli89@gmail.com'
+ WHERE id BETWEEN 1 AND 5
+ returning *;
+
+4 - DELETE FROM employee
+    WHERE id = '5'
+    returning *;
+
+
