@@ -1,0 +1,32 @@
+1-
+(
+SELECT first_name FROM actor
+LIMIT 20
+)
+union
+(
+SELECT first_name FROM customer
+LIMIT 20
+);
+
+2-
+(
+SELECT first_name FROM actor
+LIMIT 20
+)
+intersect
+(
+SELECT first_name FROM customer
+LIMIT 20
+);
+
+3-
+(
+SELECT first_name FROM actor
+LIMIT 20
+)
+except
+(
+SELECT first_name FROM customer
+LIMIT 20
+);
