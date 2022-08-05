@@ -1,0 +1,33 @@
+/* Nav start */
+.nav {
+    background-color: rgb(71, 50, 50);
+}
+
+.nav .nav-item a {
+    color: aliceblue;
+}
+
+.nav .nav-item a:hover {
+    color: rgb(140, 146, 151);
+}
+
+.nav .nav-item .nav-link.disabled {
+    color: tomato;
+}
+
+/* Nav End */
+
+/* Body start */
+
+body {
+    background-color: #E9ECEF;   
+}
+
+.container {
+    margin-top: 20px;
+    }
+
+.row {
+    margin-top: 20px;
+    padding: 20px;
+}
